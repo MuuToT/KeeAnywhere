@@ -155,7 +155,7 @@ namespace KeeAnywhere.Backup
         {
             var baseFilename = Path.GetFileNameWithoutExtension(filename);
 
-            filename = string.Format("{0}_Backup_{1:yyyy-MM-dd-HH-mm-ss}.kdbx", baseFilename, saveDateTime);
+            filename = string.Format("{0}_Backup_{1:yyyy-MM-dd-HH-mm-ss}.sync", baseFilename, saveDateTime);
 
             return filename;
         }
@@ -165,7 +165,7 @@ namespace KeeAnywhere.Backup
             var filename = GetLocalFilename(path);
             var baseFilename = Path.GetFileNameWithoutExtension(filename);
 
-            filename = string.Format("{0}_Backup_????-??-??-??-??-??.kdbx", baseFilename);
+            filename = string.Format("{0}_Backup_????-??-??-??-??-??.sync", baseFilename);
 
             return filename;
         }
